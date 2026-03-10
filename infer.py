@@ -36,8 +36,6 @@ if __name__ == "__main__":
         for label, score in sorted(result["scores"].items(), key=lambda x: -x[1]):
             print(f"  {label:<20} {score:.1%}")
     else:
-        # Interactive mode
-        print("CSR Request Classifier — enter text to classify (Ctrl+C to quit)\n")
         while True:
             try:
                 text = input("> ").strip()
