@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package classifier;
+
+message ClassificationRequest {
+    string text = 1;
+}
+
+message Classification {
+    string label = 1;
+    float confidence = 2;
+}
+
+service MBertClassifier {
+    rpc Classify (ClassificationRequest) returns (Classification);
+}
