@@ -15,8 +15,7 @@ load_dotenv()
 training_dir = os.getenv("TRAIN_DIR")
 # This train dir has jsonl files for created for finetuning -- filename representing request classification (determined by gpt-oss), and contents of prompt completion pairs
 #ex.
-# chit_chat.jsonl, quote_request.jsonl, spam.jsonl,
-# troubleshooting.jsonl, unknown.jsonl, warranty_claim.jsonl
+# chit_chat.jsonl, spam.jsonl
 
 def load_datset():
     per_label = {}
